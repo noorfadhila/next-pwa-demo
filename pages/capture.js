@@ -53,9 +53,9 @@ export default function Capture() {
     };
 
     useEffect(() => {
-        if(data.includes("localhost:3000") || data.includes("http://10.0.255.6:3000")){
-            let data_json = data.replace("localhost", "10.0.255.6")
-            router.push(data_json)
+        let host = window.location.origin
+        if(data.includes(`${host}/detail`)){
+            router.push(data)
         }
     }, [router, data])
     

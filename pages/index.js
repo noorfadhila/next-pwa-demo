@@ -4,17 +4,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 
-var opts = {
-  errorCorrectionLevel: 'H',
-  type: 'image/jpeg',
-  quality: 0.3,
-  margin: 1,
-  color: {
-    dark:"#010599FF",
-    light:"#FFBF60FF"
-  }
-}
-
 export default function Home() {
   const router = useRouter();
   if (router.isFallback) {

@@ -114,7 +114,7 @@ export default function Capture() {
             </div>
             <b><h1>Scan your image</h1></b>
             <QrReader
-                constraints={{facingMode: 'user'}}
+                constraints={{facingMode: 'environment'}}
                 className={classes.bordered}
                 showViewFinder={true}
                 onResult={(result, error) => {

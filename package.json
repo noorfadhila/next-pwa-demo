@@ -1,20 +1,30 @@
 {
+  "homepage": "http://noorfadhila.github.io/test-qr-gigel",
   "name": "next-pwa-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "next": "12.1.0",
+    "next-pwa": "^5.4.4",
+    "qrcode": "^1.5.0",
+    "qrcode-decoder": "^0.2.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-qr-reader": "^3.0.0-beta-1"
   },
   "devDependencies": {
     "eslint": "8.9.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "gh-pages": "^3.2.3"
   }
 }
